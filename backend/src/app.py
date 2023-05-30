@@ -85,8 +85,8 @@ def create_app():
 
 
 if __name__ == '__main__':
-    # port = os.getenv('PORT')
-    # if(port == None):
-    #     print("Error on $PORT env variable")
-    # else:
-        app.run(host="0.0.0.0", port=int(5000), debug=True)
+    port = os.getenv('PORT')
+    if(port == None):
+        print("Error on $PORT env variable")
+    else:
+        app.run(host="0.0.0.0", port=int(port), debug=True)
